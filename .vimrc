@@ -1,51 +1,24 @@
-execute pathogen#infect()
-syntax on
-filetype plugin indent on
-
-set number
-
-" ###############################################################################
-" GENERAL STUFFS
-" ###############################################################################
-set clipboard=unnamed
-set guifont=Monospace\ 20
-syntax on
-set number relativenumber
-set number
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
-set expandtab
-set splitbelow
-set splitright
-set cursorline
-set wrap
-set linebreak
-set showbreak=...
-set autoindent
-set smartindent
-let g:material_theme_style = 'darker'
-colorscheme material
-colorscheme material
-
-" ###############################################################################
-
-
-" ###############################################################################
-"Python Development
-" ###############################################################################
-" enable all Python syntax highlighting features
-let python_highlight_all = 1
-" Enable folding
 set foldmethod=indent
 set foldlevel=99
+set relativenumber
+syntax on
+set cursorline
 " Enable folding with the spacebar
 nnoremap <space> za
+
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
-
-" ###############################################################################
-
+let g:airline_theme='angr'
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+"let g:airline#extensions#tabline#left_sep = ''
+"let g:airline#extensions#tabline#left_alt_sep = ''
+let g:ctrlp_map = '<c-p>'
+set t_Co=256
+set background=dark
+colorscheme gruvbox 
+let g:gruvbox_contrast_dark = 'soft'
 
 " ###############################################################################
 " Mappings
@@ -57,14 +30,13 @@ inoremap <silent> <C-S>         <C-O>:update<CR>
 " Comment using ctrl-shift / 
 " nnoremap <c-/> v
 "Tab Mapping
-vnoremap <Tab> >> 
-vnoremap <S-Tab> << 
+vnoremap <Tab> >>
+vnoremap <S-Tab> <<
 
-nnoremap <Tab> >> 
+nnoremap <Tab> >>
 nnoremap <S-Tab> <<
 "Tab Mapping End
 
-imap <c-u> <esc>vw<S-u>i "Capitalize 1st letter with ctrl-u
 inoremap <c-t> <esc>i{%<Space><Space>%}<esc>2hi
 nnoremap <c-f> :NERDTreeToggle
 
@@ -89,5 +61,6 @@ nnoremap <C-H> <C-W><C-H>
 
 " ###############################################################################
 
-"Load Vundle and plugings from plugins.vim
-source ~/.vim/plugin/vundle.vim
+autocmd FileType json syntax match Comment +\/\/.\+$+
+source ~/.vim/plug.vim
+source ~/.vim/cocConf.vim

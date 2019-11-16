@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/home/igaurab/.config/i3status'
-let g:netrw_dirhist_2='/home/igaurab/.vim/bundle/dart-vim-plugin'
-let g:netrw_dirhist_3='/home/igaurab/.vim/plugin'
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/igaurab/Github/NAXA/OPen-Space-Portal/lib/model'
+let g:netrw_dirhist_2='/home/igaurab/Github/NAXA/OPen-Space-Portal'
+let g:netrw_dirhist_3='/home/igaurab/Github/NAXA/OPen-Space-Portal/lib'
+let g:netrw_dirhist_4='/home/igaurab/Github/NAXA/OPen-Space-Portal'
+let g:netrw_dirhist_5='/home/igaurab/Github/p/dotfiles/.vim'
+let g:netrw_dirhist_6='/home/igaurab/Github/p/dotfiles/.vim/plugin'
