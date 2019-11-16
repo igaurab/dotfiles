@@ -12,4 +12,9 @@ The plugins are located under a seperate file named `plug.vim` inside the `.vim`
 tmux setup is preety straightforward. I have used a starter pack from [Oh My Tmux](https://github.com/gpakosz/.tmux). Follow the installation directions and just replace the `.tmux.conf.local` file in the `$HOME` directory.
 
 # Final Screenshot
-!()[https://github.com/igaurab/dotfiles/blob/master/Screenshot.png]
+<div style="text-align: center"><table><tr>
+  <td style="text-align: center">
+  <a href="https://github.com/igaurab/dotfiles/blob/master/Screenshot.png">
+    <img src="https://github.com/igaurab/dotfiles/blob/master/Screenshot.png"/></a>
+</td>
+</tr></table></div>
