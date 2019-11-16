@@ -20,7 +20,7 @@ tmux setup is preety straightforward. I have used a starter pack from [Oh My Tmu
 
 > The necessary fonts are located on .fonts folder. Copy the fonts to ~/.fonts
 If the installed fonts doesn't show up on the preferences of your terminal.
-You will have to install `Gnome Tweaks` and setup the system wise fonts. The font I have used is `Fura Code Mono Medium"
+You will have to install `Gnome Tweaks` and setup the system wise fonts. The font I have used is `Fura Code Mono Medium`
 
 # Final Screenshot
 <div style="text-align: center"><table><tr>
