@@ -1,5 +1,8 @@
 My dotfiles for vim, tmux and i3
 
+## Zsh Setup
+Nothing fancy here. Just used the defaults from (Oh My Zsh)[https://github.com/robbyrussell/oh-my-zsh]
+
 ## Vim Setup
 
 Vim-plug for plugin management.
