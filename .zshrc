@@ -112,10 +112,3 @@ alias tas="tmux attach-session"
 alias tks="tmux kill-session -t"
 alias tkss="tmux kill-server"
 alias tmuxdconf="vim ~/.tmux/.tmux.conf"
-
-#directory aliases
-alias OpenSpace="vim ~/Github/NAXA/OPen-Space-Portal/"
-alias OpenSpacea"cd ~/Github/OPen-Space-Portal/ && vim ."
-alias g="cd ~/Github"
-alias p="cd ~/Github/p"
-alias user_location="cd ~/Github/p/user_location_plugin/ && vim ."

@@ -1,5 +1,8 @@
 My dotfiles for vim, tmux and i3
 
+## Zsh Setup
+Nothing fancy here. Just used the defaults from [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
+
 ## Vim Setup
 
 Vim-plug for plugin management.
@@ -16,8 +19,8 @@ tmux setup is preety straightforward. I have used a starter pack from [Oh My Tmu
 
 
 > The necessary fonts are located on .fonts folder. Copy the fonts to ~/.fonts
-If you are using gnmoe, the fonts installed will not show on your preferences of your terminal.
-You will have to install `Gnome Tweaks` and setup the system wise fonts. The font I have used is `Fura Code Mono Medium"
+If the installed fonts doesn't show up on the preferences of your terminal.
+You will have to install `Gnome Tweaks` and setup the system wise fonts. The font I have used is `Fura Code Mono Medium`
 
 # Final Screenshot
 <div style="text-align: center"><table><tr>
