@@ -26,3 +26,35 @@ You will have to install `Gnome Tweaks` and setup the system wise fonts. The fon
     <img src="https://github.com/igaurab/dotfiles/blob/master/Screenshot.png"/></a>
 </td>
 </tr></table></div>
+
+## Troubleshoot
+You should also install xbacklight and pulseaudio for your volume keys and brightness control keys to work.
+```
+#For volume controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume 0 +5% #increas    e sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume 0 -5% #decreas    e sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+   
+#Sreen brightness controls
+bindsym XF86MonBrightnessDown exec xbacklight -inc 5
+bindsym XF86MonBrightnessUp exec xbacklight -dec 5 
+```
+
+Also check this article to configure touch to click for touchpad
+https://cravencode.com/post/essentials/enable-tap-to-click-in-i3wm/
+
+If your xbacklight does not work by default and using intel graphics
+Add these to your /etc/X11/xorg.conf file, if it does not exist by default create one.
+For further troubleshooting check this thread:
+
+https://askubuntu.com/questions/715306/xbacklight-no-outputs-have-backlight-property-no-sys-class-backlight-folder
+
+```
+ Section "Device"                                                                         
+           Identifier      "Intel Graphics"
+           Driver          "intel"
+           Option          "Backlight" "intel_backlight"
+  EndSection
+
+
+```
