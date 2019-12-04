@@ -66,3 +66,7 @@ https://askubuntu.com/questions/715306/xbacklight-no-outputs-have-backlight-prop
 
 If you have been using i3 alongside other de, i use cinnamon btw, you might generally see that it will not load your icon themes and others that you have set.
 To can change this visually by using `lxappearance` command.
+
+If you are using anaconda along with spaceship theme:
+
+`conda config --set changeps1 False` 
