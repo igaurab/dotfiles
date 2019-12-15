@@ -1,18 +1,20 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-# Path to your oh-my-zsh installation.
+#Initial setup
 export ZSH="/home/igaurab/.oh-my-zsh"
-
-#PATH
 export PATH="$PATH:/home/igaurab/.opt/flutter/bin"
+export PATH="$PATH:/home/igaurab/.opt/anaconda3/bin"
 export PATH="$PATH:/home/igaurab/Android/Sdk/platform-tools"
-export PATH="$PATH:/usr/lib/dart/bin"
+export EDITOR vim
+
+#PS1 copied from https://github.com/LukeSmithxyz/voidrice/blob/master/.config/zsh/.zshrc
+autoload -U colors && colors
+PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%m %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -72,7 +74,9 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git
+	zsh-syntax-highlighting
+	)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -101,14 +105,30 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias q="exit"
+
+#Aliases
 alias refresh="source ~/.zshrc"
-alias zshrc="vim ~/.zshrc"
-alias i3conf="vim ~/.config/i3/config"
-alias plug="vim ~/.vim/plug.vim"
-alias vimrc="vim ~/.vimrc"
-#tmux aliases
-alias tas="tmux attach-session"
-alias tks="tmux kill-session -t"
-alias tkss="tmux kill-server"
-alias tmuxdconf="vim ~/.tmux/.tmux.conf"
+alias czh="vim ~/.zshrc"
+alias cvm="vim ~/.vimrc"
+alias ci3="vim ~/.i3/config"
+alias cxr="vim ~/.Xresources"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/igaurab/.opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/igaurab/.opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/igaurab/.opt/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/igaurab/.opt/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
