@@ -30,6 +30,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'ap/vim-css-color'
 Plug 'morhetz/gruvbox'
 Plug 'dart-lang/dart-vim-plugin'
+Plug 'chriskempson/base16-vim'
 
 call plug#end()
 

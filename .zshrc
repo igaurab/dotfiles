@@ -75,7 +75,6 @@ PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%m %{$fg[magent
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git
-	zsh-syntax-highlighting
 	)
 
 source $ZSH/oh-my-zsh.sh
@@ -112,6 +111,9 @@ alias czh="vim ~/.zshrc"
 alias cvm="vim ~/.vimrc"
 alias ci3="vim ~/.i3/config"
 alias cxr="vim ~/.Xresources"
+
+#Commands
+alias cp="cp -r"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!

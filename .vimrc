@@ -9,15 +9,16 @@ nnoremap <space> za
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 let g:airline_theme='angr'
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+"let g:airline_powerline_fonts = 1
+"let g:airline#extensions#tabline#enabled = 1
 "let g:airline#extensions#tabline#left_sep = ''
 "let g:airline#extensions#tabline#left_alt_sep = ''
+
 let g:ctrlp_map = '<c-p>'
 set t_Co=256
 set background=dark
-colorscheme gruvbox 
+colorscheme gruvbox
 let g:gruvbox_contrast_dark = 'soft'
 
 " ###############################################################################
