@@ -14,7 +14,7 @@ let g:dart_format_on_save = 1
 let g:ctrlp_map = '<c-p>'
 set t_Co=256
 set background=dark
-colorscheme gruvbox
+colorscheme onedark
 let g:gruvbox_contrast_dark = 'dark'
 hi Normal guibg=NONE ctermbg=NONE
 "Make calcurse notes markdown compatible:
@@ -38,8 +38,8 @@ if (empty($TMUX))
     set termguicolors
   endif
 endif
-"g:onedark_termcolors:1
-"g:onedark_terminal_italics:1
+g:onedark_termcolors:1
+g:onedark_terminal_italics:1
 
 if exists('+termguicolors')
   let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
