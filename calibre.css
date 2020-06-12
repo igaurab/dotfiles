@@ -1,0 +1,68 @@
+/*Taken and Modified from: https://github.com/jakedraddy/calibre_theme/blob/master/dark.css*/
+
+/*Gruvbox Theme*/
+
+html {
+    background-color: rgb(40,40,40) !important;
+}
+
+body {
+    /* background-color: rgb(255, 255, 255) !important; */
+    background-color: rgb(40,40,40) !important;
+   
+}
+
+
+/* Css to hide all images */
+
+
+/* img, svg { display: none !important;} */
+
+p,div,span{
+color: rgb(235,219,178)  !important;
+}
+
+a,
+.tx,
+h1,
+h2,
+h3,
+h4,
+.tx1,
+blockquote,
+pre,
+blockquote blockquote,
+
+ul,
+
+table {
+    margin-top: 1em !important;
+    color: rgb(255,255,255) !important;
+}
+
+a {
+    color: rgb(138, 235, 252) !important;
+}
+
+h1,
+.tx1 {
+    font-weight: bold;
+}
+
+small {
+    font-size: 0.8em !important;
+}
+
+::selection {
+    background-color: rgba(150, 54, 62, 0.432)
+}
+
+/*  
+ _                           _                   
+| |_| |__   ___ _ __ ___  __| | ___ __ _ _ __  
+| __| '_ \ / _ \ '__/ _ \/ _` |/ __/ _` | '_ \    
+| |_| | | |  __/ | |  __/ (_| | (_| (_| | |_) |   
+ \__|_| |_|\___|_|  \___|\__,_|\___\__,_| .__/    Twitter: @igaurab
+                                        |_|    
+                                       
+*/

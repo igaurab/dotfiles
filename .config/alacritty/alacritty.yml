@@ -1,0 +1,106 @@
+background_opacity: 1
+window:
+  padding:
+    x: 10
+    y: 10
+  
+
+font:
+  size: 10
+  normal:
+    family: "MesloLGM Nerd Font Mono"
+    style: Regular
+
+  bold:
+    family: " MesloLGM Nerd Font Mono"
+    style: Regular
+
+  italic:
+    family: " MesloLGM Nerd Font Mono"
+    style: Italic
+
+  bold_italic:
+    family: " MesloLGM Nerd Font Mono"
+    style: Regular Italic
+
+
+
+    # Colors (Material Theme)
+colors:
+  # Default colors
+  primary:
+    background: '#262831'
+    foreground: '0xc4c7d1'
+
+  # Normal colors
+  normal:
+    black:   '0x666666'
+    red:     '0xeb606b'
+    green:   '0xc3e88d'
+    yellow:  '0xf7eb95'
+    blue:    '0x80cbc4'
+    magenta: '0xff2f90'
+    cyan:    '0xaeddff'
+    white:   '0xffffff'
+
+  # Bright colors
+  bright:
+    black:   '0xa1a1a1'
+    red:     '0xeb606b'
+    green:   '0xc3e88d'
+    yellow:  '0xf7eb95'
+    blue:    '0x7dc6bf'
+    magenta: '0x6c71c4'
+    cyan:    '0x35434d'
+    white:   '0xffffff'
+#ColorScheme Gruvbox
+# colors:
+#   # Default colors
+#   primary:
+#     # hard contrast: background = '0x1d2021'
+#     background: "#161616"
+#     # soft contrast: background = '0x32302f'
+#     foreground: "#d5c4a1"
+
+#   normal:
+#     black: "#1d2021"
+#     red: "#fb4934"
+#     green: "#b8bb26"
+#     yellow: "#fabd2f"
+#     blue: "#83a598"
+#     magenta: "#d3869b"
+#     cyan: "#8ec07c"
+#     white: "#d5c4a1"
+
+#   # Bright colors
+#   bright:
+#     black: "#665c54"
+#     red: "#fb4934"
+#     green: "#b8bb26"
+#     yellow: "#fabd2f"
+#     blue: "#83a598"
+#     magenta: "#d3869b"
+#     cyan: "#8ec07c"
+#     white: "#fbf1c7"
+
+  cursor:
+    text: "#1d2021"
+    cursor: '#568af2'
+
+  indexed_colors:
+    - { index: 16, color: "#fe8019" }
+    - { index: 17, color: "#d65d0e" }
+    - { index: 18, color: "#3c3836" }
+    - { index: 19, color: "#504945" }
+    - { index: 20, color: "#bdae93" }
+    - { index: 21, color: "#ebdbb2" }
+
+cursor:
+  style: Beam
+  unfocused_hollow: false
+
+key_bindings:
+  - { key: Equals, mods: Control, action: IncreaseFontSize }
+  - { key: Add, mods: Control, action: IncreaseFontSize }
+  - { key: Subtract, mods: Control, action: DecreaseFontSize }
+  - { key: Minus, mods: Control, action: DecreaseFontSize }

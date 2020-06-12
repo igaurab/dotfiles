@@ -1,0 +1,2 @@
+xdg-open <$(fd -E ~/Android -E ~/gems -E ~/node_modules -E .vscode -E .gradle -E .cargo -E gems -E Android -E .pub-cache -E .rustup -E .AndroidStudio3.6 -E .ViberPC -E .local/opt/android-studio -E .local/opt/anaconda3 -E .thunderbird --full-path -E /usr -E /opt -E /dev -E /mnt -E /lib -E /etc -E /run -E /var -E /root -E /media -E /srv -E /sbin -E /lib64 -E /lost+found -E /tmp -E /sys -E /boot  | dmenu)
+

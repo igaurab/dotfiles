@@ -1,0 +1,17 @@
+{
+    "flutter.lsp.initialization.closingLabels": true,
+    "coc.preferences.formatOnSaveFiletypes": [
+        "css",
+        "javascript",
+        "typescript",
+        "html",
+        "yaml",
+        "yml",
+        "json",
+        "python",
+        "dart",
+        "markdown",
+        "graphql",
+        "cpp"
+    ]
+}
