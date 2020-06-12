@@ -26,62 +26,62 @@ font:
 
 
     # Colors (Material Theme)
-colors:
-  # Default colors
-  primary:
-    background: '#262831'
-    foreground: '0xc4c7d1'
-
-  # Normal colors
-  normal:
-    black:   '0x666666'
-    red:     '0xeb606b'
-    green:   '0xc3e88d'
-    yellow:  '0xf7eb95'
-    blue:    '0x80cbc4'
-    magenta: '0xff2f90'
-    cyan:    '0xaeddff'
-    white:   '0xffffff'
-
-  # Bright colors
-  bright:
-    black:   '0xa1a1a1'
-    red:     '0xeb606b'
-    green:   '0xc3e88d'
-    yellow:  '0xf7eb95'
-    blue:    '0x7dc6bf'
-    magenta: '0x6c71c4'
-    cyan:    '0x35434d'
-    white:   '0xffffff'
-#ColorScheme Gruvbox
 # colors:
 #   # Default colors
 #   primary:
-#     # hard contrast: background = '0x1d2021'
-#     background: "#161616"
-#     # soft contrast: background = '0x32302f'
-#     foreground: "#d5c4a1"
+#     background: '#262831'
+#     foreground: '0xc4c7d1'
 
+#   # Normal colors
 #   normal:
-#     black: "#1d2021"
-#     red: "#fb4934"
-#     green: "#b8bb26"
-#     yellow: "#fabd2f"
-#     blue: "#83a598"
-#     magenta: "#d3869b"
-#     cyan: "#8ec07c"
-#     white: "#d5c4a1"
+#     black:   '0x666666'
+#     red:     '0xeb606b'
+#     green:   '0xc3e88d'
+#     yellow:  '0xf7eb95'
+#     blue:    '0x80cbc4'
+#     magenta: '0xff2f90'
+#     cyan:    '0xaeddff'
+#     white:   '0xffffff'
 
 #   # Bright colors
 #   bright:
-#     black: "#665c54"
-#     red: "#fb4934"
-#     green: "#b8bb26"
-#     yellow: "#fabd2f"
-#     blue: "#83a598"
-#     magenta: "#d3869b"
-#     cyan: "#8ec07c"
-#     white: "#fbf1c7"
+#     black:   '0xa1a1a1'
+#     red:     '0xeb606b'
+#     green:   '0xc3e88d'
+#     yellow:  '0xf7eb95'
+#     blue:    '0x7dc6bf'
+#     magenta: '0x6c71c4'
+#     cyan:    '0x35434d'
+#     white:   '0xffffff'
+#ColorScheme Gruvbox
+colors:
+  # Default colors
+  primary:
+    # hard contrast: background = '0x1d2021'
+    background: "#161616"
+    # soft contrast: background = '0x32302f'
+    foreground: "#d5c4a1"
+
+  normal:
+    black: "#1d2021"
+    red: "#fb4934"
+    green: "#b8bb26"
+    yellow: "#fabd2f"
+    blue: "#83a598"
+    magenta: "#d3869b"
+    cyan: "#8ec07c"
+    white: "#d5c4a1"
+
+  # Bright colors
+  bright:
+    black: "#665c54"
+    red: "#fb4934"
+    green: "#b8bb26"
+    yellow: "#fabd2f"
+    blue: "#83a598"
+    magenta: "#d3869b"
+    cyan: "#8ec07c"
+    white: "#fbf1c7"
 
   cursor:
     text: "#1d2021"
