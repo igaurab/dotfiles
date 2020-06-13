@@ -1,6 +1,7 @@
 call plug#begin('$HOME/.local/share/nvim/vimplug/')
 "language server
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'turbio/bracey.vim'
 "plug 'dense-analysis/ale'
 Plug 'gruvbox-community/gruvbox'
 Plug 'joshdick/onedark.vim'
@@ -9,6 +10,7 @@ Plug 'sonph/onehalf'
 Plug 'tpope/vim-fugitive'
 Plug 'xuyuanp/nerdtree-git-plugin'
 Plug 'airblade/vim-gitgutter'
+Plug 'vifm/vifm'
 
 "language
 Plug 'rstacruz/sparkup', {'rtp': 'vim/'} "for html
