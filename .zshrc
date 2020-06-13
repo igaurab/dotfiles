@@ -1,3 +1,5 @@
+alias onedark="cd ~/dotfiles && git checkout onedark"
+alias gruvbox="cd ~/dotfiles && git checkout gruvbox"
 alias ts="$HOME/dotfiles/scripts/ts.sh"
 alias chm="chmod +x"
 alias ycli="python3 $HOME/Code/ycli/search_youtube.py"
