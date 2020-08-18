@@ -24,6 +24,6 @@ echo "Initialize Git repo" &&
 git init &&
 git add . &&
 git commit -m "Initial commit" &&
-vim .
+nvim .
 
 

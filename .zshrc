@@ -1,29 +1,33 @@
-alias onedark="cd ~/dotfiles && git checkout onedark"
-alias gruvbox="cd ~/dotfiles && git checkout gruvbox"
+alias pp="cd ~/Desktop/Programming"
+alias py="cd ~/Desktop/Programming/Python"
+alias gt="cd ~/Desktop/Programming/Go"
 alias ts="$HOME/dotfiles/scripts/ts.sh"
 alias chm="chmod +x"
 alias ycli="python3 $HOME/Code/ycli/search_youtube.py"
 alias gc="git checkout"
+alias vim="nvim"
+
 #Initial setup
 export ZSH="$HOME/.oh-my-zsh"
-export PATH="$PATH:$HOME/.local/opt/flutter/bin"
-export PATH="$PATH:$HOME/.local/opt/bin"
-export PATH="$PATH:/usr/lib/dart/bin"
-export PATH="$PATH:$HOME/.local/opt/miniconda3/bin"
+export PATH="$PATH:$HOME/Apps/src/flutter/bin"
+export PATH="$PATH:$HOME/Apps/anaconda3/bin"
 export PATH="$PATH:$HOME/Android/Sdk/platform-tools"
 export PATH="$PATH:$HOME/.cargo/bin"
-export PATH="$PATH:$HOME/.local/opt/node-v12.16.3-linux-x64/bin"
+export PATH="$PATH:$HOME/Apps/src/node-v12.16.3-linux-x64/bin"
 export PATH="$PATH:$HOME/.gem/ruby/2.7.0/bin"
 export PATH="$PATH:/var/lib/flatpak/exports/bin"
 alias fl="flutter doctor --android-licenses"
+
 #Make vim default text editor
 export VISUAL=vim
 export EDITOR="$VISUAL"
 stty stop undef #Disable Ctrl-s from freezing terminal
+
 #PS1 copied from https://github.com/LukeSmithxyz/voidrice/blob/master/.config/zsh/.zshrc
 #More on zsh prompt: http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html#Prompt-Expansion
 autoload -U colors && colors
 #PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%m %{$fg[magenta]%}%1d%{$fg[red]%}]%{$reset_color%}$%b "
+
 ZSH_THEME="minimal"
 
 plugins=(
@@ -50,12 +54,12 @@ alias r="sudo apt remove"
 alias rlibgesture="libinput-gestures-setup restart"
 #Open files in vim Starts with v
 alias v="vim"
-alias vi3="vim ~/dotfiles/.config/i3/config"
-alias va="vim ~/dotfiles/.config/alacritty/alacritty.yml"
+alias vi3="vim ~/dotfiles/config/i3/config"
+alias va="vim ~/dotfiles/config/alacritty/alacritty.yml"
 alias vb="vim ~/.config/polybar/config"
 alias vx="vim ~/.Xresources"
-alias vv="vim ~/dotfiles/.config/nvim/init.vim"
-alias vp="vim ~/dotfiles/.config/nvim/vimplug.vim"
+alias vv="vim ~/dotfiles/config/nvim/init.vim"
+alias vp="vim ~/dotfiles/config/nvim/vimplug.vim"
 alias vz="vim ~/.zshrc"
 alias vt="vim ~/.tmux.conf"
 alias vc="vim ~/dotfiles/.config/nvim/cocConf.vim"
@@ -74,15 +78,8 @@ alias bat='upower -i /org/freedesktop/UPower/devices/battery_BAT0| grep -E "stat
 #Dir
 alias nvimd="cd ~/dotfiles/nvim"
 alias wallpaper="cd ~/dotfiles/wallpaper"
-alias opt="cd ~/.local/opt"
-alias de="cd ~/Development"
-alias g="cd ~/dev/github"
 alias script="cd ~/dotfiles/scripts"
-alias ig="cd ~/Github/igaurab"
-alias theredcap="cd ~/Github/theredcap"
-alias phrasenode="cd ~/Github/other/phrasenode"
-alias reach="cd ~/Github/igaurab/reachable"
-alias areach="conda activate reach"
+alias reach="cd ~/Github/reachable"
 alias doc="cd ~/Documents"
 alias dow="cd ~/Downloads"
 #Conda alias
@@ -92,9 +89,6 @@ alias note="jupyter notebook"
 # Scripts
 alias create="~/dotfiles/scripts/animjs.sh"
 alias new="~/dotfiles/scripts/newcpp.sh"
-alias songs="~/dotfiles/scripts/songs.sh"
-alias mnt="~/dotfiles/scripts/automount.sh"
-alias umnt="sudo umount /dev/sdb1"
 #Other
 alias hackvpn="sudo openvpn ~/.local/opt/theredcap.ovpn"
 alias vpn="sudo protonvpn c -f"
@@ -130,32 +124,30 @@ ZSH_HIGHLIGHT_STYLES[suffix-alias]=fg=white,underline
 ZSH_HIGHLIGHT_STYLES[precommand]=fg=white,underline
 ZSH_HIGHLIGHT_STYLES[arg0]=fg=white
 ZSH_HIGHLIGHT_STYLES[unknown-token]=fg=white
-alias reach="cd ~/Development/reachable"
-alias phrase="cd ~/Code/phrasenode"
 alias j="playx"
 alias jk="playx -n"
-alias p="sudo protonvpn"
-alias i="sudo apt-get install"
-alias wu="apt list --upgradable"
-alias u="sudo apt update"
+alias p="python3"
+alias i="sudo pacman -S"
+alias u="sudo pacman -Su"
 alias rmd="rm -fr" #Remove directories
 alias cpd="cp -r" #copy directories
+
 #source /home/igaurab/.config/broot/launcher/bash/br
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/theredcap/.local/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/void/Apps/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/theredcap/.local/opt/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/theredcap/.local/opt/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "/home/void/Apps/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/void/Apps/anaconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/home/theredcap/.local/opt/miniconda3/bin:$PATH"
+        export PATH="/home/void/Apps/anaconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
+
 # <<< conda initialize <<<
-base
 # _   _                       _                   
 #| |_| |__   ___ _ __ ___  __| | ___ __ _ _ __  
 #| __| '_ \ / _ \ '__/ _ \/ _` |/ __/ _` | '_ \    Website: gaurabpanthee.com.np
