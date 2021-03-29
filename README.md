@@ -46,11 +46,26 @@ bindsym XF86MonBrightnessUp exec xbacklight -dec 5
 Also check this article to configure touch to click for touchpad
 https://cravencode.com/post/essentials/enable-tap-to-click-in-i3wm/
 
+```
+sudo mkdir -p /etc/X11/xorg.conf.d && sudo tee <<'EOF' /etc/X11/xorg.conf.d/90-touchpad.conf 1> /dev/null
+Section "InputClass"
+        Identifier "touchpad"
+        MatchIsTouchpad "on"
+        Driver "libinput"
+        Option "Tapping" "on"
+EndSection
+
+EOF
+
+```
+
 If your xbacklight does not work by default and using intel graphics
 Add these to your /etc/X11/xorg.conf file, if it does not exist by default create one.
 For further troubleshooting check this thread:
 
 https://askubuntu.com/questions/715306/xbacklight-no-outputs-have-backlight-property-no-sys-class-backlight-folder
+
+You may need to install xbacklight first `sudo apt install xbacklight` For arch users, `sudo pacman -S xorg-xbacklight`
 
 ```
  Section "Device"                                                                         
@@ -58,14 +73,15 @@ https://askubuntu.com/questions/715306/xbacklight-no-outputs-have-backlight-prop
            Driver          "intel"
            Option          "Backlight" "intel_backlight"
   EndSection
-
-
+  
 ```
 
 ## i3 showing default icons and themes
 
 If you have been using i3 alongside other de, i use cinnamon btw, you might generally see that it will not load your icon themes and others that you have set.
-To can change this visually by using `lxappearance` command.
+To can change this visually by using `lxappearance` command. To install lxappearance 
+
+`sudo apt install lxappearance`
 
 If you are using anaconda along with spaceship theme:
 
