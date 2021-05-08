@@ -1,7 +1,7 @@
 set t_Co=256
 set background=dark
-colorscheme gruvbox
-let g:gruvbox_contrast_dark = 'dark'
+colorscheme ayu
+"let g:gruvbox_contrast_dark = 'dark'
 hi Normal guibg=NONE ctermbg=NONE
 
 "Basic Syntax
