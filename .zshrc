@@ -1,23 +1,3 @@
-alias pp="cd ~/Desktop/Programming"
-alias py="cd ~/Desktop/Programming/Python"
-alias gt="cd ~/Desktop/Programming/Go"
-alias ts="$HOME/dotfiles/scripts/ts.sh"
-alias chm="chmod +x"
-alias ycli="python3 $HOME/Code/ycli/search_youtube.py"
-alias gc="git checkout"
-alias vim="nvim"
-
-#Initial setup
-export ZSH="$HOME/.oh-my-zsh"
-export PATH="$PATH:$HOME/Apps/src/flutter/bin"
-export PATH="$PATH:$HOME/Apps/anaconda3/bin"
-export PATH="$PATH:$HOME/Android/Sdk/platform-tools"
-export PATH="$PATH:$HOME/.cargo/bin"
-export PATH="$PATH:$HOME/Apps/src/node-v12.16.3-linux-x64/bin"
-export PATH="$PATH:$HOME/.gem/ruby/2.7.0/bin"
-export PATH="$PATH:/var/lib/flatpak/exports/bin"
-alias fl="flutter doctor --android-licenses"
-
 #Make vim default text editor
 export VISUAL=vim
 export EDITOR="$VISUAL"
@@ -29,6 +9,22 @@ autoload -U colors && colors
 #PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%m %{$fg[magenta]%}%1d%{$fg[red]%}]%{$reset_color%}$%b "
 
 ZSH_THEME="minimal"
+
+# Change cursor shape for different vi modes.
+bindkey -v
+export KEYTIMEOUT=1
+function zle-keymap-select {
+  if [[ ${KEYMAP} == vicmd ]] ||
+     [[ $1 = 'block' ]]; then
+    echo -ne '\e[1 q'
+  elif [[ ${KEYMAP} == main ]] ||
+       [[ ${KEYMAP} == viins ]] ||
+       [[ ${KEYMAP} = '' ]] ||
+       [[ $1 = 'beam' ]]; then
+    echo -ne '\e[5 q'
+  fi
+}
+zle -N zle-keymap-select
 
 plugins=(
 	zsh-syntax-highlighting
@@ -52,6 +48,7 @@ alias refresh="source ~/.zshrc"
 alias clean="sudo apt autoremove"
 alias r="sudo apt remove"
 alias rlibgesture="libinput-gestures-setup restart"
+
 #Open files in vim Starts with v
 alias v="vim"
 alias vi3="vim ~/dotfiles/config/i3/config"
@@ -86,20 +83,14 @@ alias dow="cd ~/Downloads"
 alias nlp="conda activate nlp"
 alias base="conda activate base"
 alias note="jupyter notebook"
-# Scripts
-alias create="~/dotfiles/scripts/animjs.sh"
-alias new="~/dotfiles/scripts/newcpp.sh"
+
 #Other
-alias hackvpn="sudo openvpn ~/.local/opt/theredcap.ovpn"
-alias vpn="sudo protonvpn c -f"
+alias vpn="protonvpn-cli"
 alias c="calcurse"
-alias lg="sudo pkill -u $USER"
+alias logout="sudo pkill -u $USER"
 alias i="sudo apt-get install"
 alias uu="sudo apt-get update && sudo apt-get upgrade"
-alias x="xdg-open"
-#Ruby Install
-export GEM_HOME="$HOME/gems"
-export PATH="$PATH:$HOME/gems/bin"
+alias open="xdg-open"
 
 #Switch back and forth between zsh and vim
 #https://sheerun.net/2014/03/21/how-to-boost-your-vim-productivity/
@@ -115,39 +106,15 @@ fancy-ctrl-z () {
 zle -N fancy-ctrl-z
 bindkey '^Z' fancy-ctrl-z
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 export FZF_DEFAULT_COMMAND='fd'
 ZSH_HIGHLIGHT_STYLES[suffix-alias]=fg=white,underline
 ZSH_HIGHLIGHT_STYLES[precommand]=fg=white,underline
 ZSH_HIGHLIGHT_STYLES[arg0]=fg=white
 ZSH_HIGHLIGHT_STYLES[unknown-token]=fg=white
-alias j="playx"
-alias jk="playx -n"
-alias p="python3"
-alias i="sudo pacman -S"
-alias u="sudo pacman -Su"
+
 alias rmd="rm -fr" #Remove directories
 alias cpd="cp -r" #copy directories
 
-#source /home/igaurab/.config/broot/launcher/bash/br
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/void/Apps/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/void/Apps/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/void/Apps/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/void/Apps/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-
-# <<< conda initialize <<<
 # _   _                       _                   
 #| |_| |__   ___ _ __ ___  __| | ___ __ _ _ __  
 #| __| '_ \ / _ \ '__/ _ \/ _` |/ __/ _` | '_ \    Website: gaurabpanthee.com.np
