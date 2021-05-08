@@ -1,62 +1,47 @@
-background_opacity: 0.93
+background_opacity: 0.99
 window:
   padding:
     x: 10
     y: 10
-  
 
 font:
-  size: 13
+  size: 16
+
   normal:
-    family: "MesloLGM Nerd Font Mono"
-    style: Regular
+    family: SauceCodePro NF
 
-  bold:
-    family: " MesloLGM Nerd Font Mono"
-    style: Regular
-
-  italic:
-    family: " MesloLGM Nerd Font Mono"
-    style: Italic
-
-  bold_italic:
-    family: " MesloLGM Nerd Font Mono"
-    style: Regular Italic
-
-
-    # Colors (Material Theme)
 colors:
-  # Default colors
-  primary:
-    background: '#262831'
-    foreground: '0xc4c7d1'
-
-  # Normal colors
-  normal:
-    black:   '0x666666'
-    red:     '0xeb606b'
-    green:   '0xc3e88d'
-    yellow:  '0xf7eb95'
-    blue:    '0x80cbc4'
-    magenta: '0xff2f90'
-    cyan:    '0xaeddff'
-    white:   '0xffffff'
-
-  # Bright colors
   bright:
-    black:   '0xa1a1a1'
-    red:     '0xeb606b'
-    green:   '0xc3e88d'
-    yellow:  '0xf7eb95'
-    blue:    '0x7dc6bf'
-    magenta: '0x6c71c4'
-    cyan:    '0x35434d'
-    white:   '0xffffff'
-
+    black: '#5c5855'
+    blue: '#807d7c'
+    cyan: '#cdab53'
+    green: '#3a3432'
+    magenta: '#d6d5d4'
+    red: '#e8bbd0'
+    white: '#f7f7f7'
+    yellow: '#4a4543'
+  cursor:
+    cursor: '#a5a2a2'
+    text: '#090300'
+  normal:
+    black: '#090300'
+    blue: '#01a0e4'
+    cyan: '#b5e4f4'
+    green: '#01a252'
+    magenta: '#a16a94'
+    red: '#db2d20'
+    white: '#a5a2a2'
+    yellow: '#fded02'
+  primary:
+    background: '#090300'
+    foreground: '#a5a2a2'
+  selection:
+    background: '#4a4543'
+    text: '#a5a2a2'
 
   cursor:
     text: "#1d2021"
-    cursor: '#568af2'
+    cursor: '#db2d20'
 
   indexed_colors:
     - { index: 16, color: "#fe8019" }
@@ -65,12 +50,3 @@ colors:
     - { index: 19, color: "#504945" }
     - { index: 20, color: "#bdae93" }
     - { index: 21, color: "#ebdbb2" }
-
-cursor:
-  style: Beam
-
-key_bindings:
-  - { key: Equals, mods: Control, action: IncreaseFontSize }
-  - { key: Add, mods: Control, action: IncreaseFontSize }
-  - { key: Subtract, mods: Control, action: DecreaseFontSize }
-  - { key: Minus, mods: Control, action: DecreaseFontSize }
