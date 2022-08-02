@@ -41,5 +41,7 @@ Plug 'ayu-theme/ayu-vim'
 Plug 'mhinz/vim-startify'
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'junegunn/goyo.vim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 call plug#end()
 
