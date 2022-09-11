@@ -10,8 +10,9 @@ autocmd BufRead,BufNewFile /tmp/calcurse* set filetype=markdown
 autocmd BufRead,BufNewFile ~/.calcurse/notes/* set filetype=markdown
 
 "Folding
-autocmd BufWinLeave *.* mkview
-autocmd BufWinEnter *.* silent loadview
+"autocmd BufWinLeave *.* mkview
+"autocmd BufWinEnter *.* silent loadview
+
 autocmd FileType json syntax match Comment +\/\/.\+$+
 
 let g:netrw_banner = 0

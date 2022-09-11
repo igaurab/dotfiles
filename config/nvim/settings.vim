@@ -28,3 +28,4 @@ set hls is "highlight words
 set formatoptions-=cro 
 set autochdir
 
+set clipboard+=unnamedplus
