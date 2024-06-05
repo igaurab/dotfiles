@@ -171,4 +171,4 @@ client.background           #2f343f
 
 #MY CONFIGURATIONS
 exec --no-startup-id nm-applet
-exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/Wallpaper.png
+exec --no-startup-id nitrogen --restore
