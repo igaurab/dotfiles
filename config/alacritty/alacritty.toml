@@ -1,61 +1,5 @@
 [window]
-  opacity = 0.9
-
-[[colors.indexed_colors]]
-color = "#fe8019"
-index = 16
-
-[[colors.indexed_colors]]
-color = "#d65d0e"
-index = 17
-
-[[colors.indexed_colors]]
-color = "#3c3836"
-index = 18
-
-[[colors.indexed_colors]]
-color = "#504945"
-index = 19
-
-[[colors.indexed_colors]]
-color = "#bdae93"
-index = 20
-
-[[colors.indexed_colors]]
-color = "#ebdbb2"
-index = 21
-
-[colors.bright]
-black = "#5c5855"
-blue = "#807d7c"
-cyan = "#cdab53"
-green = "#3a3432"
-magenta = "#d6d5d4"
-red = "#e8bbd0"
-white = "#f7f7f7"
-yellow = "#4a4543"
-
-[colors.cursor]
-cursor = "#db2d20"
-text = "#1d2021"
-
-[colors.normal]
-black = "#090300"
-blue = "#01a0e4"
-cyan = "#b5e4f4"
-green = "#01a252"
-magenta = "#a16a94"
-red = "#db2d20"
-white = "#a5a2a2"
-yellow = "#fded02"
-
-[colors.primary]
-background = "#090300"
-foreground = "#a5a2a2"
-
-[colors.selection]
-background = "#4a4543"
-text = "#a5a2a2"
+  opacity = 0.8
 
 [font]
 size = 12
@@ -66,3 +10,6 @@ family = "SauceCodePro NF"
 [window.padding]
 x = 10
 y = 10
+
+
+

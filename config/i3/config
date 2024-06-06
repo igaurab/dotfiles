@@ -13,7 +13,8 @@ exec --no-startup-id xsettingsd &
 # start a terminal
 bindsym $super+Return exec alacritty
 # start dmenu (a program launcher)
-bindsym $super+d exec i3-dmenu-desktop --dmenu="dmenu -i -fn 'Noto Sans:size=9'"
+# bindsym $super+d exec i3-dmenu-desktop --dmenu="dmenu -i -fn 'Noto Sans:size=9'"
+bindsym $super+d exec rofi -show-icons -show 'drun'
 
 #kill a focused window
 bindsym $super+Shift+q kill
@@ -26,8 +27,8 @@ bindsym $super+Shift+f exec thunar;workspace 3;focus
 #bindsym $super+Shift+g exec geany
 
 #change volume
-bindsym XF86AudioRaiseVolume exec amixer -q set Master 3%+
-bindsym XF86AudioLowerVolume exec amixer -q set Master 3%-
+bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 3%+
+bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master 3%-
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 ################################################################################################
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
@@ -172,3 +173,4 @@ client.background           #2f343f
 #MY CONFIGURATIONS
 exec --no-startup-id nm-applet
 exec --no-startup-id nitrogen --restore
+exec --no-startup-id picom
